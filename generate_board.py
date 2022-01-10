@@ -20,7 +20,7 @@ def main():
 
 def generate_board(_1, _2, _3, _4, _5, _6, _7, _8, _9):
     print(f'[{_1}] [{_2}] [{_3}]\n[{_4}] [{_5}] [{_6}]\n[{_7}] [{_8}] [{_9}]')
-
+    
     #This code below was an attempt to create an adjustable board size
     #for row in range(1, board_size+1):
         #for col in range(1, board_size+1):
