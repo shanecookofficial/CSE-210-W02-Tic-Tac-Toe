@@ -2,7 +2,7 @@
 from generate_board_visual import generate_board_visual
 from generate_menu import generate_menu
 from play_again_logic import play_again_logic
-from game_logic import game_logic, end_game_loop
+from game_logic import game_logic_check
 def main():
 
     
@@ -44,90 +44,91 @@ def main():
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[0] = 'X'
                                         tile_1 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
+                                        
                                 elif tile_choice == 2:
                                     if tile_2 == 'X' or tile_2 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[1] = 'X'
                                         tile_2 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                                 elif tile_choice == 3:
                                     if tile_3 == 'X' or tile_3 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[2] = 'X'
                                         tile_3 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                                 elif tile_choice == 4:
                                     if tile_4 == 'X' or tile_4 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[3] = 'X'
                                         tile_4 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                                 elif tile_choice == 5:
                                     if tile_5 == 'X' or tile_5 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[4] = 'X'
                                         tile_5 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                                 elif tile_choice == 6:
                                     if tile_6 == 'X' or tile_6 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[5] = 'X'
                                         tile_6 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                                 elif tile_choice == 7:
                                     if tile_7 == 'X' or tile_7 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[6] = 'X'
                                         tile_7 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                                 elif tile_choice == 8:
                                     if tile_8 == 'X' or tile_8 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[7] = 'X'
                                         tile_8 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                                 elif tile_choice == 9:
                                     if tile_9 == 'X' or tile_9 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
+                                        board[8] = 'X'
                                         tile_9 = 'X'
-                                        game_logic(board)
-                                        end = end_game_loop()
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 2
                         
                         elif player_num == 2:
@@ -140,90 +141,90 @@ def main():
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_1 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[0] = 'O'
+                                        tile_1 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 2:
                                     if tile_2 == 'X' or tile_2 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_2 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[1] = 'O'
+                                        tile_2 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 3:
                                     if tile_3 == 'X' or tile_3 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_3 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[2] = 'O'
+                                        tile_3 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 4:
                                     if tile_4 == 'X' or tile_4 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_4 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[3] = 'O'
+                                        tile_4 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 5:
                                     if tile_5 == 'X' or tile_5 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_5 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[4] = 'O'
+                                        tile_5 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 6:
                                     if tile_6 == 'X' or tile_6 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_6 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[5] = 'O'
+                                        tile_6 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 7:
                                     if tile_7 == 'X' or tile_7 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_7 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[6] = 'O'
+                                        tile_7 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 8:
                                     if tile_8 == 'X' or tile_8 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_8 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[7] = 'O'
+                                        tile_8 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                                 elif tile_choice == 9:
                                     if tile_9 == 'X' or tile_9 == 'O':
                                         print(f'That tile has already been chosen, please select another!')
                                         tile_logic = False
                                     else:
-                                        tile_9 = 'O'
-                                        game_logic(board)
-                                        end = end_game_loop()
+                                        board[8] = 'O'
+                                        tile_9 = '0'
                                         tile_logic = True
+                                        end = game_logic_check(board)
                                         player_num = 1
                         
                 #This is where the game will be played for 2 people sharing a computer
