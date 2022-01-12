@@ -2,7 +2,8 @@
 from generate_board_visual import generate_board_visual
 from generate_menu import generate_menu
 from play_again_logic import play_again_logic
-from game_logic import game_logic_check
+from game_logic import game_logic_check, end_game_message
+from how_to_play import how_to_play
 def main():
 
     
@@ -48,6 +49,7 @@ def main():
                                         tile_1 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                         
                                 elif tile_choice == 2:
@@ -59,6 +61,7 @@ def main():
                                         tile_2 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                 elif tile_choice == 3:
                                     if tile_3 == 'X' or tile_3 == 'O':
@@ -69,6 +72,7 @@ def main():
                                         tile_3 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                 elif tile_choice == 4:
                                     if tile_4 == 'X' or tile_4 == 'O':
@@ -79,6 +83,7 @@ def main():
                                         tile_4 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                 elif tile_choice == 5:
                                     if tile_5 == 'X' or tile_5 == 'O':
@@ -89,6 +94,7 @@ def main():
                                         tile_5 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                 elif tile_choice == 6:
                                     if tile_6 == 'X' or tile_6 == 'O':
@@ -99,6 +105,7 @@ def main():
                                         tile_6 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                 elif tile_choice == 7:
                                     if tile_7 == 'X' or tile_7 == 'O':
@@ -109,6 +116,7 @@ def main():
                                         tile_7 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                 elif tile_choice == 8:
                                     if tile_8 == 'X' or tile_8 == 'O':
@@ -119,6 +127,7 @@ def main():
                                         tile_8 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                                 elif tile_choice == 9:
                                     if tile_9 == 'X' or tile_9 == 'O':
@@ -129,6 +138,7 @@ def main():
                                         tile_9 = 'X'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 2
                         
                         elif player_num == 2:
@@ -145,6 +155,7 @@ def main():
                                         tile_1 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 2:
                                     if tile_2 == 'X' or tile_2 == 'O':
@@ -155,6 +166,7 @@ def main():
                                         tile_2 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 3:
                                     if tile_3 == 'X' or tile_3 == 'O':
@@ -165,6 +177,7 @@ def main():
                                         tile_3 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 4:
                                     if tile_4 == 'X' or tile_4 == 'O':
@@ -175,6 +188,7 @@ def main():
                                         tile_4 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 5:
                                     if tile_5 == 'X' or tile_5 == 'O':
@@ -185,6 +199,7 @@ def main():
                                         tile_5 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 6:
                                     if tile_6 == 'X' or tile_6 == 'O':
@@ -195,6 +210,7 @@ def main():
                                         tile_6 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 7:
                                     if tile_7 == 'X' or tile_7 == 'O':
@@ -205,6 +221,7 @@ def main():
                                         tile_7 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 8:
                                     if tile_8 == 'X' or tile_8 == 'O':
@@ -215,6 +232,7 @@ def main():
                                         tile_8 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
                                         player_num = 1
                                 elif tile_choice == 9:
                                     if tile_9 == 'X' or tile_9 == 'O':
@@ -225,6 +243,8 @@ def main():
                                         tile_9 = '0'
                                         tile_logic = True
                                         end = game_logic_check(board)
+                                        end_game_message(board)
+                                        
                                         player_num = 1
                         
                 #This is where the game will be played for 2 people sharing a computer
@@ -233,7 +253,7 @@ def main():
             elif selection_1 == 2:
                 #This is where the game will be played for 1 person against an AI
                 #generated through the random library
-                print(f'THIS PORTION IS STILL UNDER CONSTRUCTION')
+                how_to_play()
                 selection_1 = play_again_logic()
                 pass
             elif selection_1 == 3:

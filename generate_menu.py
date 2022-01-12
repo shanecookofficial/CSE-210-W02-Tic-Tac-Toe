@@ -7,7 +7,7 @@ def main():
 
 def generate_menu():
 
-    print(f'------------------------\n(1)Play against a friend\n(2)Play against an AI\n(3)Quit\n-------------------------')
+    print(f'------------------------\n(1)Play against a friend\n(2)How To Play\n(3)Quit\n-------------------------')
 
     pass
 
