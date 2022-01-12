@@ -9,7 +9,7 @@ def play_again_logic():
     selection_1 = 0
     status = False
     while status != True:
-        answer = input(f'Would you like to play again?(Y/N): ')
+        answer = input(f'\nWould you like to play again?(Y/N): ')
         answer = answer.upper()
         if answer == 'Y':
             status = True
